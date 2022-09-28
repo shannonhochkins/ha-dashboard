@@ -2,7 +2,7 @@
 
 ## Demo
 
-![](https://github.com/shannonhochkins/ha-dashboard/ha-demo.gif)
+![](https://github.com/shannonhochkins/ha-dashboard/blob/master/ha-demo.gif)
 
 ## Motivation
 
