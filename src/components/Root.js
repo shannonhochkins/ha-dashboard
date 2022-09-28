@@ -8,7 +8,6 @@ import { HassContext } from '@root/context';
 
 import { Sidebar } from './Sidebar';
 import { useRoutes } from '@root/routes';
-import { theme } from '../styles/theme';
 
 // warnings
 import { FrontDoorOpened } from './Alerts/FrontDoorOpened';
@@ -97,33 +96,31 @@ export function Dashboard() {
 
   return (
     <ThemeProvider theme={muiTheme}>
-      <ThemeProvider theme={theme}>
-        <Global
-          styles={css`
-            html, body, ${Wrapper} {
-              height: 100%;
-              width: 100%;
-              margin: 0;
-              padding: 0;
-              font-family: "Roboto";
-              overflow: hidden;
-            }
-          `}
-        />
-        <Wrapper>
-          <Background />
-          <Sidebar />
-          <Areas onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
-            <AnimatePresence custom={direction}>
-              <Routes location={location} key={location.pathname} id="routes">
-                {routes.map(route => <Route key={route.name} path={`/${route.pathname}`} element={route.render(direction)} />)}
-              </Routes>
-              <FrontDoorOpened id="front-door-opened" />
-              <FrontDoorBellRang id="front-door-rang" />
-            </AnimatePresence>
-          </Areas>
-        </Wrapper>
-      </ThemeProvider>
+      <Global
+        styles={css`
+          html, body, ${Wrapper} {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto";
+            overflow: hidden;
+          }
+        `}
+      />
+      <Wrapper>
+        <Background />
+        <Sidebar />
+        <Areas onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
+          <AnimatePresence custom={direction}>
+            <Routes location={location} key={location.pathname} id="routes">
+              {routes.map(route => <Route key={route.name} path={`/${route.pathname}`} element={route.render(direction)} />)}
+            </Routes>
+            <FrontDoorOpened id="front-door-opened" />
+            <FrontDoorBellRang id="front-door-rang" />
+          </AnimatePresence>
+        </Areas>
+      </Wrapper>
     </ThemeProvider>
   );
 

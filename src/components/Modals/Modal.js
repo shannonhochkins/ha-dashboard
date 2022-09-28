@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 
 export const ModalContainer = styled.div`
-  background-color: #262b31;
+  background-color: #0d121e;
   width: 350px;
   border-radius: 10px;
   z-index: 999;
@@ -20,7 +20,7 @@ export const ModalContent = styled.div`
 export const ModalStyle = {
   overlay: {
     padding: 0,
-    backgroundColor: '#404040CC',
+    backgroundColor: 'rgba(0,0,0,0.7)',
     zIndex: 9,
   },
   content: {
@@ -31,6 +31,6 @@ export const ModalStyle = {
     right: 'initial',
     bottom: 'initial',
     left: 'calc(50%)',
-    transform: 'translateY(-50%)',
+    transform: 'translateY(-50%) translateX(-50%)',
   },
 };

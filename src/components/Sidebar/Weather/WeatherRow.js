@@ -22,7 +22,7 @@ const WeatherRowContainer = styled.div`
   padding: 10px;
   align-items: center;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: rgba(255, 255, 255, 0.1);
 `;
 
 const TimeCityContainer = styled.div`
@@ -30,14 +30,14 @@ const TimeCityContainer = styled.div`
 `;
 
 const City = styled.div`
-  color: ${props => props.theme.colors.textLight};
-  font-size: ${props => props.theme.card.name.size};
+  color: #FFFFFFE0;
+  font-size: 12px;
 `;
 
 const Temperature = styled.div`
   width: 36px;
   text-align: right;
-  color: ${props => props.theme.colors.textLight};
+  color: #FFFFFFE0;
   font-size: 18px;
 `;
 

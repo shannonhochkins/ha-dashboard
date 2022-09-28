@@ -32,7 +32,8 @@
     "react-router-dom": "^6.4.0",
     "react-switch": "^7.0.0",
     "simplebar-react": "^2.4.1",
-    "tinycolor2": "^1.4.2"
+    "tinycolor2": "^1.4.2",
+    "use-debounce": "^8.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",

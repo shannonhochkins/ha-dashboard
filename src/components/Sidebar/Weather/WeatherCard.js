@@ -22,7 +22,7 @@ const CardTitle = styled.div`
   width: 100%;
   height: 30px;
   line-height: 30px;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.04);
   color: rgb(209, 213, 219);;
   padding-left: 10px;
   box-sizing: border-box;

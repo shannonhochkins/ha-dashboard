@@ -25,18 +25,18 @@ const TitleContainer = styled.div`
 
 const Title = styled.div`
   color: #fff;
-  font-size: ${props => props.theme.modal.header.title.size};
-  font-weight: ${props => props.theme.modal.header.title.weight};
+  font-size: 12px;
+  font-weight: bold;
 `;
 
 const Subtitle = styled.div`
-  color: ${props => props.theme.modal.header.subtitle.color};
-  font-size: ${props => props.theme.modal.header.subtitle.size};
-  font-weight: ${props => props.theme.modal.header.subtitle.weight};
+  color: #808080;
+  font-size: 12px;
+  font-weight: bold;
 `;
 
 const CloseIconContainer = styled.div`
-  background: ${props => props.theme.colors.light2};
+  background: #ddd;
   width: 24px;
   height: 24px;
   border-radius: 100%;
@@ -48,17 +48,6 @@ const CloseIconContainer = styled.div`
     margin-top: 3px;
   }
 `;
-
-// interface ModalHeaderProps {
-//   /** Method to close the modal */
-//   readonly close: () => void;
-//   /** Icon of the header */
-//   readonly icon: ReactNode;
-//   /** Subtitle of the header */
-//   readonly subtitle: string;
-//   /** Title of the header */
-//   readonly title: string;
-// }
 
 export const ModalHeader = (props) => {
   return (

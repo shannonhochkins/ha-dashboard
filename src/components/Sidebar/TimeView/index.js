@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled'
 
 const TimeContainer = styled.div`
-  color: ${props => props.theme.colors.textLight};
+  color: #FFFFFFE0;
   font-size: 40px;
   width: 100%;
   text-align: center;

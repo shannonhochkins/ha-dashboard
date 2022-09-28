@@ -52,7 +52,7 @@ module.exports = {
     filename: '[name].js',
     chunkFilename: '[name].chunk.js',
     path: buildPath,
-    publicPath: `${publicPath}/` ,
+    publicPath: `${publicPath}${isProd ? '/' : ''}` ,
   },
   devServer: {
     contentBase: buildPath,

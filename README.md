@@ -59,3 +59,20 @@ panel_custom:
     config:
       name: World
 ```
+
+
+## Custom Redirect from the default dashboard so devices auto redirect to the react-panel
+This will simply find the react-panel element in the sidebar and click it if it's not active, add this javascript file to the default dashboard resources.
+
+```javscript
+export default function customRedirect( {
+    const homeAssistant = document.querySelector('home-assistant');
+	const root = homeAssistant.shadowRoot.querySelector('home-assistant-main').shadowRoot;
+	const sidebarRoot = root.querySelector('ha-sidebar').shadowRoot;
+	const reactPanelElement = sidebarRoot.querySelector('paper-listbox').querySelector('a[data-panel="react-panel"]:not([class*="selected"])');
+	if(!reactPanelElement) { return; }
+	reactPanelElement.click();
+}
+
+customRedirect();
+```

@@ -139,13 +139,13 @@ const StyledListItem = styled(ListItem)`
     
     ${props => props.active && `
       color: rgb(16, 185, 129);
-      background-color: rgba(255, 255, 255, 0.08);
+      background-color: rgba(255, 255, 255, 0.04);
       font-weight: 700;
     `}
     &:hover, &:active, &:focus {
       text-decoration: none;
       box-shadow: none;
-      background-color: rgba(255, 255, 255, 0.08);
+      background-color: rgba(255, 255, 255, 0.04);
     }
     i {
       color: currentColor;

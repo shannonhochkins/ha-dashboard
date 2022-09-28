@@ -12,8 +12,8 @@ const CameraCardContainer = styled(CardContainer)`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: ${props => props.theme.cameraCard.width};
-  height: ${props => props.theme.cameraCard.height};
+  width: 396px;
+  height: 240px;
   background: black;
 `;
 

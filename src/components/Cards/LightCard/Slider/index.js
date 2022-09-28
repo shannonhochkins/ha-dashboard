@@ -15,7 +15,7 @@ export const CustomSlider = styled.input`
   margin-top: 80px;
   outline: none;
   border-radius: 20px;
-  background: ${props => props.theme.colors.light2};
+  background: #F0F0F0;
   overflow: hidden;
   transform: rotate(-90deg);
 
@@ -30,16 +30,6 @@ export const CustomSlider = styled.input`
 `;
 
 let timeout;
-
-// interface SliderProps {
-//   /** Color of the slider */
-//   readonly color: string;
-//   /** Action triggered on slider change */
-//   readonly onChange: (value: number) => void;
-//   /** Value of the slider */
-//   readonly value: number;
-// }
-
 export const Slider = (props) => {
   const [value, setValue] = useState(props.value);
 

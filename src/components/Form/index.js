@@ -35,7 +35,7 @@ export const FieldWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
   border-radius: 12px;
   padding:12px 12px;
   flex-wrap: wrap;
@@ -76,7 +76,7 @@ export const RangeSlider = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
   border-radius: 12px;
   padding:24px 12px;
   &::before,
