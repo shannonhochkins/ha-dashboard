@@ -10,8 +10,8 @@ const colors = {
   textGray: '#909090',
   textDark: '#000000D0',
 
-  backgroundActive: '#FFFFFFFF',
-  backgroundInactive: '#70707040',
+  backgroundActive: '#262b31',
+  backgroundInactive: '#262b31',
 
   red: '#BD0909',
   green: '#38B700',
@@ -56,7 +56,7 @@ export const theme = {
     height: '240px',
   },
   sceneCard: {
-    width: '206px',
+    width: '100%',
     height: '48px',
     name: {
       size: '14px',

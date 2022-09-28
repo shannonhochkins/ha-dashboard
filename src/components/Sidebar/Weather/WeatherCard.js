@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { WeatherRow } from './WeatherRow';
-import { CardTitle } from '../CardTitle';
 
 const apiKey = '6fab242a97455d7bbda28668ee6c028c';
 
@@ -19,6 +18,18 @@ async function getWeather(city) {
   return weatherInfo;
 }
 
+const CardTitle = styled.div`
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgb(209, 213, 219);;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: font-weight: 500;
+`;
+
 const WeatherCardContainer = styled.div`
   width: 100%;
   height: initial;
@@ -30,9 +41,7 @@ const WeatherCardContainer = styled.div`
   cursor: pointer;
   overflow: hidden;
   user-select: none;
-  &:active {
-    transform: scale(0.9);
-  }
+  border-radius: 12px;
 `;
 
 const cities = [

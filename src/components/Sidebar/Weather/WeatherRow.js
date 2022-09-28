@@ -22,15 +22,11 @@ const WeatherRowContainer = styled.div`
   padding: 10px;
   align-items: center;
   box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.04);
 `;
 
 const TimeCityContainer = styled.div`
   flex-grow: 1;
-`;
-
-const Time = styled.div`
-  color: ${props => props.theme.colors.textMedium};
-  font-size: ${props => props.theme.card.state.size};
 `;
 
 const City = styled.div`
@@ -60,15 +56,9 @@ const Image = styled.img`
 export function WeatherRow(props) {
   const { weather } = props;
 
-  function format2Digits(number) {
-    return ('0' + number).slice(-2);
-  }
-  
   let weatherIcon = null;
-  let date = null;
 
   if (weather) {
-    date = new Date(new Date().getTime() + ((14400 + weather.timezone) / 60) * 60000);
     switch(weather.iconId) {
       case '01d': // Clear
         weatherIcon = DayClearIcon;
@@ -132,7 +122,6 @@ export function WeatherRow(props) {
   return (
     <WeatherRowContainer>
       <TimeCityContainer>
-        <Time>{format2Digits(date.getHours())}:{format2Digits(date.getMinutes())}</Time>
         <City>{weather.city}</City>
       </TimeCityContainer>
       <Icon><Image src={weatherIcon} /></Icon>

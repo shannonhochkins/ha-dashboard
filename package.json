@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "license": "ISC",
   "panelServingUrl": "/local/react-panel",
+  "browserslist": [
+    "since 2019"
+  ],
   "scripts": {
     "start": "webpack serve --watch-content-base",
     "build": "NODE_ENV=production webpack"
@@ -10,14 +13,26 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@fontsource/roboto": "^4.5.8",
+    "@fseehawer/react-circular-slider": "^2.5.9",
     "@mui/icons-material": "^5.10.3",
+    "@mui/lab": "^5.0.0-alpha.100",
+    "@mui/material": "^5.10.6",
+    "@uiw/react-color-wheel": "^1.1.0",
     "axios": "^0.27.2",
     "framer-motion": "^7.3.5",
+    "i": "^0.3.7",
+    "lodash": "^4.17.21",
+    "npm": "^8.19.2",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.12.1",
-    "react-pro-sidebar": "^0.7.1",
-    "react-router-dom": "^6.4.0"
+    "react-ripples": "^2.2.1",
+    "react-router-dom": "^6.4.0",
+    "react-switch": "^7.0.0",
+    "simplebar-react": "^2.4.1",
+    "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",

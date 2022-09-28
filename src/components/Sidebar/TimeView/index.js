@@ -3,9 +3,10 @@ import styled from '@emotion/styled'
 
 const TimeContainer = styled.div`
   color: ${props => props.theme.colors.textLight};
-  font-size: 70px;
+  font-size: 40px;
   width: 100%;
   text-align: center;
+  margin-top: 40px;
 `;
 
 export function TimeView() {
