@@ -1,6 +1,6 @@
 # THIS HAS MOVED!!!
 
-This is an older repository and no longer maintained in favor of the new (@hakit packages!)[https://github.com/shannonhochkins/ha-component-kit]
+This is an older repository and no longer maintained in favor of the new [@hakit packages!](https://github.com/shannonhochkins/ha-component-kit)
 
 ## HomeAssistant React Dashboard
 
